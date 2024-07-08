@@ -1,9 +1,11 @@
+import Header from "./components/Header";
 import ProductsContextProvider from "./context/ProductsContext";
 import ProductListPage from "./pages/ProductsListPage";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
+      <Header/>
     
       <ProductsContextProvider>
         <ProductListPage/>

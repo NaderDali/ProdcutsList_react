@@ -1,13 +1,63 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Popping",sans-serif;
+  background: #fdfdfd; 
+}
+
+.container{
+  width: calc(100%-20px);
+  max-width: 1080px;
+  margin: 0 auto;
+
+}
+header{
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #bbb;
+  background:#fff;
+
+}
+
+header .container{
+  display: flex;
+  justify-content:space-between ;
+  align-items: center;
+  height: 100%;
+
+}
+
+header .logo{
+  font-weight: 500;
+
+}
+
+header .links button{
+  background: transparent;
+  color: #111 ;
+  font-size: 1em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.product-list-page{
+  padding: 2em 0;
+
+}
+
+.product-list-page h2{
+  margin-bottom: 1.5em;
+  font-size: 1.5em;
+  color: #111;
+}
+
+.product-list-page .products-list{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 0.8em;
 }

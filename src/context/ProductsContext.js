@@ -1,14 +1,15 @@
 import { createContext, useContext, useState } from "react";
-import productDummyData from "../dummydata/products.json";
+import productsDummyData from "../dummydata/products.json";
 
 
 const ProductsContext= createContext(null);
+
 export const useProductContext=()=> {
     return useContext(ProductsContext);
-}
+};
 
 function ProductsContextProvider({children}){
-    const [products,setProducts] = useState([productDummyData]);
+    const [products,setProducts] = useState(productsDummyData);
     const[cart, setCart]=useState([]);
     const isInCart=(product )=> {
         return cart.find(e=>e.id===product.id)
@@ -28,7 +29,7 @@ function ProductsContextProvider({children}){
         }
 
     };
-    const removeFromtCart=(product)=>{
+    const removeFromCart=(product)=>{
         const cartProduct= cart.find(e=>e.id===product.id);
         if(cartProduct){
             if(cartProduct.count===1){
@@ -46,13 +47,13 @@ function ProductsContextProvider({children}){
         products,
         cart,
         addToCart,
-        removeFromtCart,
+        removeFromCart,
         isInCart
     };
     return(
-        // eslint-disable-next-line no-undef
+        
         <ProductsContext.Provider value={value}>
-        {children}
+          {children}
         </ProductsContext.Provider>
 
     )

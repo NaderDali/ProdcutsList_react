@@ -1,5 +1,5 @@
-{
-    "products": [
+
+     [
     {
     "id": 1,
     "title": "Essence Mascara Lash Princess",
@@ -13,6 +13,7 @@
     "beauty",
     "mascara"
     ],
+     
     "brand": "Essence",
     "sku": "RCH45Q1A",
     "weight": 2,
@@ -6008,8 +6009,5 @@
     ],
     "thumbnail": "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20Airpods/thumbnail.png"
     }
-    ],
-    "total": 194,
-    "skip": 0,
-    "limit": 100
-    }
+    ]
+    
