@@ -13,7 +13,7 @@ function ProductCard({product}){
     const cartProduct=isInCart(product);
 
     return (
-        <div className="product.card">
+        <div className="product-card">
             <div className="image">
                 <img src={product.thumbnail}/>
             </div>

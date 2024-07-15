@@ -61,3 +61,92 @@ header .links button{
   grid-template-columns: repeat(4,1fr);
   gap: 0.8em;
 }
+.product-card {
+  background: #fff;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  box-shadow: 0px 2px 5px 2px rgba(0,0,0,0,05);
+}
+.product-card .image img{
+  width: 100%;
+  aspect-ratio: 1/1;
+  max-width: 250px;
+
+}
+
+.product-card .details{
+  flex: 1;
+  padding-bottom: 0.2em;
+}
+
+.product-card .details h2{
+  font-size: 0.9em;
+  color: #111;
+  font-weight: 400;
+}
+
+.product-card .details .price{
+  font-size: 0.8em;
+  font-weight:600 ;
+
+}
+
+.product-card .add-to-cart-btn{
+  width: 100%;
+  height: 30px;
+  background:#111;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 5px;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+}
+
+.counter-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.counter-box input{
+  width: 100%;
+  flex: 1;
+  text-align: center;
+  height: 30px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+
+
+}
+
+.counter-box button{
+  width: 30px;
+  height: 30px;
+  background: #ddd;
+  color: #111;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  font-size: 1em;
+}
+
+@media(max-width:480px){
+  .product-list-page .products-list{
+    grid-template-columns: repeat(2,1fr);
+    
+  }
+
+}
+
+@media(min-width:480px)and (max-width:780px){
+  .product-list-page .products-list{
+    grid-template-columns: repeat(3,1fr);
+    
+  }
+
+}
